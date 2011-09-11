@@ -211,9 +211,79 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: okamuuu
    ========================================================================== */
-#container {
-    width: 780px;
-    margin: 0 auto;
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, "メイリオ", Meiryo;
+    background: fixed -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(255,255,255)), color-stop(0.62, rgb(244,244,244)));
+    background: #F4F4F4;
+}
+
+.shadowbox {
+position: relative;
+display: block;
+background-color: white;
+-moz-box-shadow: 0px 0px 4px silver;
+-webkit-box-shadow: 0px 0px 4px silver;
+box-shadow: 0px 0px 4px silver;
+}
+
+a {
+    position: relative; 
+    color: #CCC; 
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+a:active {position: relative; top: 1px;}
+a:hover { 
+    color: #000000; 
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+header {
+    padding: 20px 0;
+    background-color:rgba(255,255,255,1);
+    border-bottom: 1px solid #CCCCCC;
+}
+
+header h1, header h2, #main, #pagenav, footer {
+    width: 920px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#pagenav ul {
+    margin: 15px 0;
+    padding:5px;
+}
+
+#pagenav ul li {
+    color: #CCCCCC;
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 21px;
+    margin: 0px 6px 0px 0;
+    padding: 0px 10px 0px 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+#pagenav li.current,
+#pagenav li:hover
+{
+    color: #333333;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
 }
 
 nav#primary {
@@ -242,16 +312,44 @@ nav#primary ul li.current a,
 nav#primary ul li a:hover { color: #000;}
 nav#primary ul li a:before {content: "\2605\0020";}
 
+section h1 {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px #333;
+}
+section h2 {
+    color: #666;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: dotted 1px #333;
+}
+section p {
+    line-height: 1.7;
+    padding-bottom: 15px;
+}
 
+section figure {
+    width: 500px;
+}
 
+section figure figcaption{
+    text-align: center;
+    padding-bottom: 5px;
+}
 
+section figure img {
+    display: block; 
+    padding: 15px;
+}
 
-
-
-
-
-
-
+footer {
+    text-align: right;
+    border-top: 1px solid #CECECE;
+    color: #666666;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 12px 0 20px;
+}
 
 
 /* ==|== media queries ======================================================
